@@ -2,7 +2,7 @@
 /**
  * Sorts a sequence effeciently in quasi-linear time.
  * @param{number[]} A - An array of numbers.
- * @returns{number[]} The sorted array of A's elements.
+ * @returns{number[]} The sorted array of `A`'s elements.
 */
 function bucketSort(A) {
     // lowest, highest = min(A), max(A)
