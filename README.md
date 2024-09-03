@@ -1,22 +1,12 @@
-# Data Structures and Algorithms (Python)
+# JS
 
-A definitive approach to JavaScript.
+JavaScript coding excerpts from *JavaScript: The Definitive Guide*<sup>[^1](#Flan11)</sup> 
+and [others](#references).
 
-### Contents
-
-| Folders    | Corresponding Directories            [^1](#Flan11) |
-|:-----------|:--------------------------------------------------|
-| Chapter 1  | [Introduction to JavaScript](Chapter1)            |
-| Chapter 2  | [Lexical Structure](Chapter2)                     |
-| Chapter 3  |                                                   |
 
 ## Getting Started
 
 After cloning the repository, you may run the programs using **VS Code** or an IDE/editor of your choice.
-
-### Release Notes
-
-...
 
 ## Contributing
 
@@ -28,7 +18,7 @@ This project is licensed under the [GNU GPL v3](https://choosealicense.com/licen
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
+Hat tip to anyone whose code was used.
 
 ## References
 

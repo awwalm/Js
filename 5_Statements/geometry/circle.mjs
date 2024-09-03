@@ -17,6 +17,6 @@ class Circle {
     radius = () => {
       return this.#r;
     }
-  }
+}
   
   console.log([new Circle(9).radius(), new Circle(9).area(), new Circle(9).circumference()]);
