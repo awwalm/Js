@@ -1,7 +1,9 @@
 # JS
 
-JavaScript coding excerpts from *JavaScript: The Definitive Guide*<sup>[^1](#Flan11)</sup> 
+JavaScript coding excerpts from *JavaScript: The Definitive Guide*<sup>[^1](#Flan20)</sup> 
 and [others](#references).
+
+**See the [tour](TourJS.md).**
 
 
 ## Getting Started
@@ -22,5 +24,5 @@ Hat tip to anyone whose code was used.
 
 ## References
 
-1. Flanagan D. (2011). <a id="Flan11" href="https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/">_JavaScript: The Definitive Guide_</a>
+1. Flanagan D. (2020). <a id="Flan20" href="https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/">_JavaScript: The Definitive Guide_</a>
 . Hoboken, NJ, USA: Wiley.
