@@ -7,7 +7,7 @@ export { Range };
 class Range {
     /**
      * Store the start and end points (state) of this new range object.
-     * These are noninherited properties that are unique to this object.
+     * These are non-inherited properties that are unique to this object.
      * @param {string|number|Date} from  
      * @param {string|number|Date} to
     */
@@ -62,6 +62,7 @@ console.log([...r])     // => [1,2,3]; Convert to an array via iterator
 let r2 = Range.parse(`(1...10)`);   // Returns a new Range object
 console.log(r2);
 try {
+    // noinspection JSUnresolvedReference
     r2.parse(`(1...10)`);           // TypeError: r2.parse is not a function
 } catch (error) {
     console.warn(String(error).slice(0,40));

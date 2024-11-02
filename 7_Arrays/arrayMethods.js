@@ -48,14 +48,14 @@ map();
 let filter = () => {
     // Using filter() to segregate into odd and even numbers:
     const arr = Array.from({length: 10}, (v,i) => i+1);
-    const even = arr.filter((x) => x%2 == 0);
+    const even = arr.filter((x) => x%2 === 0);
     const odd = arr.filter((x) => x%2 !== 0);
     for (let a of [arr, even, odd]) console.log(a);
 
     // Note that filter() skips missing elements in sparse arrays 
     // and that its return value is always dense. 
     // To close the gaps in a sparse array, you can do this: 
-    var sparse = Array.from(arr);
+    let sparse = Array.from(arr);
     sparse[13] = 13; sparse[28] = 28; sparse[19] = 19;
     console.log(sparse);
     sparse = sparse.filter(() => true);
@@ -63,7 +63,7 @@ let filter = () => {
 
     // Close the gap and remove null and undefined:
     for (let i of [2,4,5,6,9]) {
-        if(i%2 == 0) sparse[i] = null;
+        if(i%2 === 0) sparse[i] = null;
         else sparse[i] = undefined;
     }
     console.log(sparse);
@@ -80,7 +80,7 @@ filter();
  */
 let flatMap = () => {
     let arr = [1,[2,3]], arr2 = [1,[2,[3]]];
-    var arr3 = arr.flat(), arr4 = arr2.flat();
+    const arr3 = arr.flat(), arr4 = arr2.flat();
     console.log(arr, arr3);
     console.log(arr2, arr4); 
 
@@ -107,6 +107,7 @@ let shiftUnshift = () => {
     q.push(1,2);    // q = [1,2]
     q.shift();      // q = [2]
     q.push(3);      // q = [2,3]
+    console.log(q);
     q.shift();      // q = [3]
     q.shift();      // q = []
 
@@ -114,6 +115,7 @@ let shiftUnshift = () => {
     let a = [];
     a.unshift(1);   // a = [1]
     a.unshift(2);   // a = [2,1]
+    console.log(a);
     a = [];
     a.unshift(1,2); // a = [1,2]
 }
@@ -122,7 +124,7 @@ shiftUnshift();
 
 /**
  * `splice()` takes at most one index to begin deletion as argument.
- * The next optional index spacify the number of items to delete (forwards).
+ * The next optional index specify the number of items to delete (forwards).
  * The next sequence of parameters specify the new elements to be inserted
  * starting from where the deletion initially began.
  */
