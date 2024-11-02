@@ -19,7 +19,7 @@ export { Range };
  */
 function Range(from, to) {
     // Store the start and end points (state) of this new range object.
-    // These are noninherited properties that are unique to this object.
+    // These are non-inherited properties that are unique to this object.
     this.from = from;
     this.to = to;
 }
@@ -30,7 +30,7 @@ function Range(from, to) {
  */
 Range.prototype = {
     // Return true if x is in the range, false otherwise
-    // This method works for textual and Date ranes as well as numeric.
+    // This method works for textual and Date ranges as well as numeric.
     /**@param{number|string|Date} x*/
     includes: function(x) { return this.from <= x && x <= this.to; },
 
@@ -45,7 +45,7 @@ Range.prototype = {
     toString: function() { return "(" + this.from + "..." + this.to + ")"; }
 };
 
-// Alternative way of explictly setting constructor
+// Alternative way of explicitly setting constructor
 Range.prototype.constructor = Range;
 
 // Here are example uses of this new Range class

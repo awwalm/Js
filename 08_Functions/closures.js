@@ -1,6 +1,8 @@
 
+// noinspection SpellCheckingInspection
+
 /**
- * The checkscope() function declares a local variable and then defines 
+ * The checkscope() function declares a local variable and then defines
  * and invokes a function that returns the value of that variable.
  */
 const closure1 = () => {
@@ -21,8 +23,7 @@ const closure2 = () => {
         function f() { return scope; }
         return f;
     }
-    let s = checkScope()();
-    return s;               // Still 'local scope' !
+    return checkScope()();               // Still 'local scope' !
 }
 console.log(closure2());
 
