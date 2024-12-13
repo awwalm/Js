@@ -24,7 +24,7 @@ for (let i=0; i < a.length; i++) {
     b[i] = a[i]
 }
 c = Array.from(b, (i) => i+10);
-console.log(c);
+console.log(`c = ${c}`);
 
 
 const equalArrays = (A,B) => {                  // Identical arrays are equal

@@ -109,6 +109,7 @@ let getData = (n) => {
   }
   return matrix;
 };
+
 /**
  * You need the labeled form of the break statement when you want to break out
  * of a statement that is not the nearest enclosing loop or a switch.
